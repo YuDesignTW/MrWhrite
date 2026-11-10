@@ -1,0 +1,6 @@
+Use case: ads-marketing.
+Asset type: single portrait background for an editable Instagram carousel interior page.
+Input image is a STYLE REFERENCE only. Match the MIDDLE RED PANEL of the supplied reference. Output ONE independent 1080x1350 portrait, never the three-panel sheet.
+Background: full-bleed warm vermilion red #f02116 with extremely subtle fine paper grain, flat and uniformly lit.
+Composition measured on the requested 1080x1350 canvas: crisp thin black vertical rule at x70 spanning y25 to y1315; crisp thin black horizontal rules from x28 to x1045 at y105, y600, y1215. Stroke thickness about 2px. Leave every remaining region empty red for editable live text to be overlaid later.
+Absolutely NO letters, words, numerals, typography, branding, logos, icons, objects, gradients, shadows, marks or additional decorations. Specifically REMOVE the large black 01 and all headlines/footers/header from the reference. Preserve only the red paper background and precise thin black grid. Professional minimalist Swiss graphic poster texture.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "JISTO 故事輪播"
+  short_description: "以真實故事結合商業與設計觀點，製作自然中文與圖像敘事的 IG 輪播"
+  default_prompt: "使用 $jisto-story-carousel，延續已認可的三篇輪播水準，從選題、查證到完成圖文。"

@@ -1,0 +1,503 @@
+{
+  "approvalDate": "2026-11-07",
+  "approval": "使用者明確滿意三篇輪播；保存作寫作與視覺基準。",
+  "originalArtifact": "mr-white/output/ig-story-v2-2026-11-07/",
+  "note": "assets 的檔案路徑指向原始作品目錄，不是本 skill 內的可重用圖片；來源照片不自動授權挪到其他題材。",
+  "posts": [
+    {
+      "id": "01-oxo",
+      "brand": "OXO",
+      "title": "賣削皮器，怎麼連紅蘿蔔都擺出來了？",
+      "directions": [
+        "產品誕生",
+        "人物經驗",
+        "美感與設計巧思",
+        "銷售與購買"
+      ],
+      "why": "從貨架旁的一碗紅蘿蔔，倒回一把削皮器的誕生。具體、有畫面，也能談到怎麼讓客人理解產品。",
+      "angle": "好握這件事，顧客在買之前要怎麼確認？",
+      "arc": "紅蘿蔔 → 廚房裡的困難 → 改握柄 → 邀人觸摸 → 店裡試削 → 回到購買前的體驗。",
+      "caption": "賣削皮器的地方，擺了一碗紅蘿蔔。\n\nOXO 的回顧提到，Sam Farber 曾和零售商合作，讓顧客在店裡試削。握柄做得更好握，總得讓人有機會拿起來。\n\n我喜歡這個細節。包裝上寫「舒適、防滑」很容易，讓人買之前就知道適不適合自己，才需要多想一步。\n\n你在賣的東西，有沒有哪個優點，不試就不知道？\n\n資料：OXO、Cooper Hewitt、Smart Design。圖片來源見各頁；紅蘿蔔為 AI 情境示意。完整來源另附。",
+      "slides": [
+        {
+          "title": "賣削皮器，\n怎麼連紅蘿蔔\n都擺出來了？",
+          "body": "OXO 貨架旁的一個小實驗。",
+          "sources": [
+            "O1"
+          ],
+          "image": "carrots",
+          "layout": "hero",
+          "kind": "來源事實的轉述",
+          "role": "封面"
+        },
+        {
+          "title": "起點，是一把\n讓太太手痛的削皮器。",
+          "body": "Sam Farber 退休後，和太太 Betsey 到法國普羅旺斯生活。\n她有關節炎，做菜時，連握住削皮器都很吃力。",
+          "sources": [
+            "O1",
+            "O2"
+          ],
+          "image": "tools",
+          "layout": "photo",
+          "kicker": "故事得先回到廚房",
+          "kind": "來源事實的轉述",
+          "role": "故事得先回到廚房"
+        },
+        {
+          "title": "握柄，重新做。",
+          "body": "Sam 找來 Smart Design，也聽消費者、廚師和關節炎團體怎麼說。\n後來的握柄變寬、變軟，手濕時也不容易滑。",
+          "sources": [
+            "O1",
+            "O2"
+          ],
+          "image": "prototypes",
+          "layout": "archive",
+          "kicker": "從手的感受開始",
+          "imageCaption": "握柄原型｜OXO 官方回顧",
+          "kind": "來源事實的轉述",
+          "role": "從手的感受開始"
+        },
+        {
+          "title": "那些小細片，\n是想讓你摸一下。",
+          "body": "握柄兩側的細片，碰了會彎。\nOXO 說，當時做這個細節，就是想吸引人拿起來試。",
+          "sources": [
+            "O1"
+          ],
+          "image": "tools",
+          "layout": "detail",
+          "kicker": "留意握柄兩側",
+          "labels": [
+            "寬大的握柄",
+            "會彎曲的細片"
+          ],
+          "kind": "來源事實的轉述",
+          "role": "留意握柄兩側"
+        },
+        {
+          "title": "再放一碗紅蘿蔔，\n讓人當場削。",
+          "body": "Sam 和零售商合作，把削皮器放在紅蘿蔔旁。\n客人能直接試用，好不好握，不必只聽介紹。",
+          "sources": [
+            "O1"
+          ],
+          "image": "carrots",
+          "layout": "photo",
+          "kicker": "從摸一下，到真的用一次",
+          "kind": "來源事實的轉述",
+          "role": "從摸一下，到真的用一次"
+        },
+        {
+          "title": "「好握」寫在包裝上，\n你就知道了嗎？",
+          "body": "我會記得那碗紅蘿蔔。\n把握柄改好之後，Sam 還多做了一件事：\n讓客人在買之前，就能試出差別。",
+          "sources": [
+            "O1"
+          ],
+          "image": "tools",
+          "layout": "photo",
+          "crop": [
+            0.35,
+            0.2,
+            0.65,
+            0.8
+          ],
+          "kicker": "回到買東西的那一刻",
+          "kind": "作者觀點",
+          "role": "回到買東西的那一刻"
+        }
+      ],
+      "sources": [
+        {
+          "id": "O1",
+          "title": "OXO｜Behind the Design: OXO's Iconic Good Grips Handles",
+          "url": "https://www.oxo.com/blog/behind-the-scenes/behind-design-oxos-iconic-good-grips-handles",
+          "kind": "品牌官方回顧",
+          "supports": "Betsey 的握持困難；寬握柄、防滑材料、側邊可彎曲細片；零售店紅蘿蔔試用。"
+        },
+        {
+          "id": "O2",
+          "title": "Cooper Hewitt｜Getting a Grip on User-Inspired Design",
+          "url": "https://www.cooperhewitt.org/2015/12/17/getting-a-grip-on-user-inspired-design/",
+          "kind": "博物館設計研究文章",
+          "supports": "Betsey 為建築師；Smart Design 團隊訪談消費者、廚師與關節炎團體；Good Grips 的握柄與產品延伸。"
+        },
+        {
+          "id": "O3",
+          "title": "Smart Design｜Getting a grip",
+          "url": "https://smartdesignworldwide.com/projects/oxo-partnership/",
+          "kind": "參與設計團隊的案例回顧",
+          "supports": "Good Grips 開發、品牌識別與後續跨品類延伸；不是獨立成效稽核。"
+        }
+      ],
+      "assets": {
+        "tools": {
+          "file": "assets/oxo-tools.jpg",
+          "credit": "照片：Smart Design",
+          "description": "削皮器與握柄開發模型。",
+          "url": "https://smartdesign-site.s3.us-east-2.amazonaws.com/wp-content/uploads/2020/04/11092513/OXO-Product-Development-Native-Feature-Gear-Patrol-Lead-Full-2.jpg"
+        },
+        "prototypes": {
+          "file": "assets/oxo-peelers.jpg",
+          "credit": "照片：OXO",
+          "description": "OXO 官方文章的握柄原型照片。",
+          "url": "https://www.oxo.com/media/magefan_blog/2017/01/OXOpeelers_handles-1.jpg"
+        },
+        "carrots": {
+          "file": "assets/carrots-illustration.png",
+          "credit": "AI 情境示意，非歷史照片",
+          "description": "用於說明店內紅蘿蔔試用概念；未重現真實店家或現場。",
+          "url": ""
+        }
+      },
+      "guardrails": [
+        "不把 Betsey 寫成毫無參與的被動角色，也不虛構夫妻對話。",
+        "不宣稱試用提高了特定轉換率、營收或利潤。",
+        "不同來源對初期品項數及創立年份敘述不同，本篇不使用這些數字。",
+        "照片不可解讀為文中事件發生當下；逐頁附圖說與來源。",
+        "沒有補寫人物對話、當下心理或缺乏證據的銷售數字。"
+      ]
+    },
+    {
+      "id": "02-ikea",
+      "brand": "IKEA IMPALA",
+      "title": "他贏了老闆一瓶酒，椅子卻沒留下來。",
+      "directions": [
+        "品牌的關鍵選擇",
+        "失敗與意外",
+        "營收與獲利",
+        "美感與設計巧思"
+      ],
+      "why": "同一張椅子，讓老闆看走眼，也讓設計師遇到生產的現實。兩次轉折都有館方紀錄。",
+      "angle": "一款家具受歡迎，為什麼仍然只賣了一年？",
+      "arc": "贏酒卻退場 → 老闆看衰 → 客人喜歡 → 製造困難 → 低價與成本放在一起看 → 設計師後來的作品。",
+      "caption": "這張椅子讓 IKEA 老闆輸了一瓶威士忌。\n\nIMPALA 推出後很受歡迎，設計師 Gillis Lundgren 贏了賭注。但製造複雜、成本高，產品只過一年就退出系列。\n\n一瓶酒可以判誰看對了客人的喜好，卻算不完一張椅子的生意。這也是我想把後半段一起講完的原因。\n\n資料與照片：IKEA Museum。館方沒有公布這款產品的毛利或虧損金額。完整來源另附。",
+      "slides": [
+        {
+          "title": "他贏了老闆\n一瓶酒。\n椅子卻沒留下來。",
+          "body": "IKEA IMPALA，一個只賣了一年的故事。",
+          "sources": [
+            "I1",
+            "I2"
+          ],
+          "image": "impala",
+          "layout": "hero",
+          "kind": "來源事實的轉述",
+          "role": "封面"
+        },
+        {
+          "title": "老闆預期，\n最多賣五件。",
+          "body": "1971 年，Gillis Lundgren 設計的 IMPALA 推出。\nIKEA 創辦人 Kamprad 不看好它的造型，還拿一瓶威士忌跟他打賭。",
+          "sources": [
+            "I1",
+            "I2"
+          ],
+          "image": "impala",
+          "layout": "archive",
+          "kicker": "館方記下了老闆當時的判斷",
+          "imageCaption": "IMPALA 座椅系列｜1972 年型錄",
+          "kind": "來源事實的轉述",
+          "role": "館方記下了老闆當時的判斷"
+        },
+        {
+          "title": "結果，酒被\n設計師拿走了。",
+          "body": "IMPALA 很受歡迎。\nKamprad 輸了賭注，Gillis 贏得那瓶威士忌。\n故事寫到這裡，很像可以慶功了。",
+          "sources": [
+            "I1"
+          ],
+          "image": "gillis",
+          "layout": "photo",
+          "kicker": "照片中的人：Gillis Lundgren",
+          "kind": "來源事實的轉述",
+          "role": "照片中的人：Gillis Lundgren"
+        },
+        {
+          "title": "但一年後，\n它退出了產品線。",
+          "body": "IKEA Museum 補上了後半段：\nIMPALA 製造複雜，成本也高。\n客人喜歡，仍然沒讓它長久留在系列裡。",
+          "sources": [
+            "I2"
+          ],
+          "image": "impala",
+          "layout": "photo",
+          "crop": [
+            0.35,
+            0.1,
+            0.65,
+            0.9
+          ],
+          "kicker": "還有工廠這一關",
+          "kind": "來源事實的轉述",
+          "role": "還有工廠這一關"
+        },
+        {
+          "title": "型錄裡，\n還特別強調價格低。",
+          "body": "把型錄文案和後來的紀錄放在一起看，\n這張椅子的難處就更清楚了。",
+          "sources": [
+            "I1",
+            "I2"
+          ],
+          "image": "impala",
+          "layout": "comparison",
+          "kicker": "兩份館方資料，放在同一頁",
+          "labels": [
+            "型錄向客人強調｜價格低",
+            "後來的製造紀錄｜複雜、成本高"
+          ],
+          "kind": "來源整理與作者解讀",
+          "role": "兩份館方資料，放在同一頁"
+        },
+        {
+          "title": "後來，他還畫出了\nBILLY 書櫃。",
+          "body": "Gillis 繼續設計，BILLY 成為他後來的代表作。\n那瓶酒，他確實贏了。只是要把一款家具一直賣下去，還有另一筆帳要算。",
+          "sources": [
+            "I2"
+          ],
+          "image": "billy",
+          "layout": "archive",
+          "kicker": "故事沒有停在 IMPALA",
+          "imageCaption": "Gillis Lundgren 與 BILLY 書櫃｜IKEA Museum",
+          "kind": "來源事實與作者收尾",
+          "role": "故事沒有停在 IMPALA"
+        }
+      ],
+      "sources": [
+        {
+          "id": "I1",
+          "title": "IKEA Museum｜IMPALA",
+          "url": "https://ikeamuseum.com/en/explore/product-stories/impala-easy-chair-1972/",
+          "kind": "品牌博物館產品史",
+          "supports": "1971 年推出；Gillis Lundgren 設計；Kamprad 對造型的疑慮、威士忌賭注與產品受歡迎。"
+        },
+        {
+          "id": "I2",
+          "title": "IKEA Museum｜Gillis Lundgren",
+          "url": "https://www.ikeamuseum.com/en/explore/designer-portraits/gillis-lundgren/",
+          "kind": "品牌博物館人物史",
+          "supports": "IMPALA 生產複雜且昂貴，一年後退出系列；1972 年型錄圖像。"
+        }
+      ],
+      "assets": {
+        "impala": {
+          "file": "assets/ikea-impala.jpg",
+          "credit": "照片：IKEA Museum／1972 型錄",
+          "description": "IMPALA 座椅系列的歷史型錄。",
+          "url": "https://www.ikeamuseum.com/wp-content/uploads/2025/01/ikea-designer-gillis-lundgren-impala-seating-furniture-catalogue-1972-1600x900.jpg"
+        },
+        "gillis": {
+          "file": "assets/ikea-gillis.jpg",
+          "credit": "照片：IKEA Museum",
+          "description": "Gillis Lundgren 肖像，非賭注現場。",
+          "url": "https://www.ikeamuseum.com/wp-content/uploads/2025/01/ikea-designer-gillis-lundgren-portrait-02-1024x1280.jpg"
+        },
+        "billy": {
+          "file": "assets/ikea-billy.jpg",
+          "credit": "照片：IKEA Museum",
+          "description": "Gillis Lundgren 與 BILLY 書櫃。",
+          "url": "https://www.ikeamuseum.com/wp-content/uploads/2025/01/ikea-designer-gillis-lundgren-billy-bookcases-1600x900.jpg"
+        }
+      },
+      "guardrails": [
+        "『賣得好』依館方對 huge seller / instant hit 的描述，沒有公開銷量數字。",
+        "只說生產複雜、成本高及一年後退場，不推定確切毛利、虧損或倒閉。",
+        "威士忌賭注為官方史料轉述，沒有補寫直接對話。",
+        "照片不可解讀為文中事件發生當下；逐頁附圖說與來源。",
+        "沒有補寫人物對話、當下心理或缺乏證據的銷售數字。",
+        "「最多賣五件」為館方對 Kamprad 判斷的轉述，不是逐字引言。"
+      ]
+    },
+    {
+      "id": "03-mailchimp",
+      "brand": "Mailchimp",
+      "title": "他媽媽的美髮店，開在家裡的廚房。",
+      "directions": [
+        "產品誕生",
+        "人物經驗",
+        "品牌的關鍵選擇",
+        "商業成效與操作"
+      ],
+      "why": "從創辦人的家庭經驗切入，讓「小企業」變成讀者認得的人；收購金額放回二十年的時間裡。",
+      "angle": "做產品時，創辦人心裡想的是哪些人？",
+      "arc": "媽媽的生意 → 家族的挫折 → 設計公司的副業 → 具體客群 → 需求改變 → 二十年後的交易 → 回到創辦人的提問。",
+      "caption": "Mailchimp 的故事裡，有一間開在廚房的美髮店。\n\nBen Chestnut 的母親在家裡做美髮；共同創辦人 Dan Kurzius 的父親開過麵包店。他們後來做網站，也做了一個給小企業用的郵件行銷工具。\n\n讀 Ben 的回顧時，我會記得那些店。當「小企業」變成一個熟悉的老闆，沒時間、沒預算，就不只是簡報上的客群特徵。\n\n2021 年，Mailchimp 被 Intuit 以約 120 億美元收購。從 2001 年的副業算起，中間隔了二十年。這是收購規模，並非一年營收。\n\n資料：Mailchimp 官方沿革、Ben 2019 年回顧、Intuit 收購公告。完整來源另附。",
+      "slides": [
+        {
+          "title": "他媽媽的美髮店，\n開在家裡的廚房。",
+          "body": "Mailchimp 創辦人，從這裡認識小生意。",
+          "sources": [
+            "M1"
+          ],
+          "image": "family",
+          "layout": "hero",
+          "crop": [
+            0,
+            0,
+            0.49,
+            1
+          ],
+          "kind": "來源事實的轉述",
+          "role": "封面"
+        },
+        {
+          "title": "他們也看過，\n家裡的店撐不下去。",
+          "body": "Ben 的姐姐後來開了髮廊，最後收掉了。\n另一位創辦人 Dan 的父親做麵包；連鎖店進城後，他失去了那間店。",
+          "sources": [
+            "M1"
+          ],
+          "image": "family",
+          "layout": "archive",
+          "kicker": "Ben 在 2019 年寫下的家族經歷",
+          "imageCaption": "左：Ben 與母親；右：Dan 的家庭｜Mailchimp",
+          "kind": "來源事實的轉述",
+          "role": "Ben 在 2019 年寫下的家族經歷"
+        },
+        {
+          "title": "後來，他們\n一起幫人做網站。",
+          "body": "2001 年，Ben 和 Dan 經營網頁設計生意。\n公司接大企業的案子，兩人也在主業之外，做了給小企業用的郵件行銷工具。",
+          "sources": [
+            "M1",
+            "M2"
+          ],
+          "image": "ben",
+          "layout": "portraits",
+          "kicker": "那個副業，叫 Mailchimp",
+          "kind": "來源事實的轉述",
+          "role": "那個副業，叫 Mailchimp"
+        },
+        {
+          "title": "小店也想寄行銷信，\n但軟體太大、太貴。",
+          "body": "Mailchimp 最初想提供另一種選擇，\n讓小企業也能用上大型競爭者在用的行銷工具。",
+          "sources": [
+            "M2"
+          ],
+          "image": "family",
+          "layout": "photo",
+          "crop": [
+            0.5,
+            0,
+            0.5,
+            1
+          ],
+          "kicker": "照片：Dan 的家庭；非客戶使用現場",
+          "kind": "來源事實的轉述",
+          "role": "照片：Dan 的家庭；非客戶使用現場"
+        },
+        {
+          "title": "做久了，客人\n要的也變多了。",
+          "body": "2019 年，Ben 寫道，客人希望把行銷放在同一處。\n小店沒有時間管理好幾套軟體，Mailchimp 也因此擴成整合平台。",
+          "sources": [
+            "M1"
+          ],
+          "image": "ben",
+          "layout": "archive",
+          "kicker": "十八年後的產品變化",
+          "imageCaption": "Ben Chestnut｜Mailchimp 官方肖像",
+          "kind": "來源事實的轉述",
+          "role": "十八年後的產品變化"
+        },
+        {
+          "title": "這個副業，\n走了二十年。",
+          "body": "2021 年，Intuit 完成收購。\n金額約 120 億美元，包含現金與股票。",
+          "sources": [
+            "M1",
+            "M3",
+            "M4"
+          ],
+          "image": "family",
+          "layout": "timeline",
+          "kicker": "把大數字放回時間裡",
+          "events": [
+            [
+              "2001",
+              "網頁設計公司的副業"
+            ],
+            [
+              "2019",
+              "整合更多行銷工具"
+            ],
+            [
+              "2021",
+              "Intuit 完成收購"
+            ]
+          ],
+          "kind": "來源事實的轉述",
+          "role": "把大數字放回時間裡"
+        },
+        {
+          "title": "如果當年家裡\n有這些工具呢？",
+          "body": "Ben 在回顧裡說，這些年，他們一直在想：\n什麼工具能幫家人把生意做大、撐過競爭？\n讀到這裡，我又想起那間廚房裡的美髮店。",
+          "sources": [
+            "M1"
+          ],
+          "image": "family",
+          "layout": "photo",
+          "crop": [
+            0,
+            0,
+            0.49,
+            1
+          ],
+          "kicker": "回到創辦人寫下的那個問題",
+          "kind": "創辦人自述的轉述與作者收尾",
+          "role": "回到創辦人寫下的那個問題"
+        }
+      ],
+      "sources": [
+        {
+          "id": "M1",
+          "title": "Mailchimp｜Bringing It All Together: Introducing Our All-in-One Marketing Platform",
+          "url": "https://mailchimp.com/newsroom/ben/mailchimps-evolution/",
+          "kind": "Ben Chestnut 於 2019-05-13 發表的創辦人回顧",
+          "supports": "2001 年成立、網頁設計副業；兩位創辦人的家庭小生意經驗；客人要求整合行銷工具，2019 年推出平台定位。"
+        },
+        {
+          "id": "M2",
+          "title": "Mailchimp｜About Mailchimp",
+          "url": "https://mailchimp.com/about/",
+          "kind": "品牌官方沿革",
+          "supports": "網頁設計公司服務大型企業，另開發面向小企業的郵件行銷服務；回應早期軟體龐大昂貴的問題。"
+        },
+        {
+          "id": "M3",
+          "title": "Intuit｜Intuit Completes Acquisition of Mailchimp",
+          "url": "https://investors.intuit.com/news-events/press-releases/detail/154/intuit-completes-acquisition-of-mailchimp",
+          "kind": "2021-11-01 完成收購公告",
+          "supports": "約 57 億美元現金及約 63 億美元股票等收購對價；屬交易而非年度營收或淨利。"
+        },
+        {
+          "id": "M4",
+          "title": "Mailchimp｜Our Co-founders",
+          "url": "https://mailchimp.com/about/founders/",
+          "kind": "品牌官方創辦人介紹",
+          "supports": "2001 年共同創辦；2021 年以約 120 億美元規模被 Intuit 收購。"
+        }
+      ],
+      "assets": {
+        "family": {
+          "file": "assets/mailchimp-family.jpg",
+          "credit": "家庭照片：Mailchimp",
+          "description": "左半為 Ben 與母親；右半為 Dan 的家庭。",
+          "url": "https://mailchimp.com/ctf/images/yzco4xsimv0y/7C6zcqPFm7OTSFB1NkKPLR/1f89b88ea8415afc1401d8c69c760cd9/Article_inline.jpg?q=70&w=980"
+        },
+        "ben": {
+          "file": "assets/mailchimp-ben.png",
+          "credit": "肖像：Mailchimp",
+          "description": "Ben Chestnut 官方肖像。",
+          "url": "https://mailchimp.com/ctf/images/yzco4xsimv0y/2HEZ9JLNq8wgyukK6CQYQE/f9173a2822a21aabaa5083238e90bfb9/Leadership_circle-portraits_Ben.png?q=85&w=1200"
+        },
+        "dan": {
+          "file": "assets/mailchimp-dan.png",
+          "credit": "肖像：Mailchimp",
+          "description": "Dan Kurzius 官方肖像。",
+          "url": "https://mailchimp.com/ctf/images/yzco4xsimv0y/2LTIIo9Lyg4IY4CyYSkEg2/45f9b8f4430b859c7313729c463b578b/Leadership_circle-portraits_Dan.png?q=85&w=1200"
+        }
+      },
+      "guardrails": [
+        "約 120 億美元是交易規模，並非營收、利潤或兩位創辦人的個人實拿金額。",
+        "Intuit 完成公告另列限制型股票單位與員工授予，故不用『恰好 120 億美元全現金』。",
+        "從 2001 到 2021 約 20 年，不包裝成一夕成功。",
+        "不宣稱某一設計或免費方案單獨造成收購，也不給保證可複製的營收公式。",
+        "品牌沿革與創辦人文章為自述，敘事中的動機以來源歸屬呈現。",
+        "照片不可解讀為文中事件發生當下；逐頁附圖說與來源。",
+        "沒有補寫人物對話、當下心理或缺乏證據的銷售數字。",
+        "家庭經驗與動機依 Ben 2019 年回顧轉述，不據此推定收購的單一成因。"
+      ]
+    }
+  ]
+}

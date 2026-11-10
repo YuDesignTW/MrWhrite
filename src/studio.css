@@ -1,0 +1,468 @@
+.studio {
+  overflow: auto;
+  flex: 1;
+  padding: 36px 40px;
+  color: var(--text, #e6e6e6);
+  min-height: 0;
+}
+.studio-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.studio-heading small {
+  letter-spacing: 0.16em;
+  color: #bfbfbf;
+  font-size: 11px;
+}
+.studio-heading h1 {
+  font-size: 27px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.studio-heading p,
+.studio p {
+  color: #acacac;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.studio-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.studio button {
+  border: 1px solid #424242;
+  background: #2b2b2b;
+  color: #e4e4e4;
+  border-radius: 8px;
+  padding: 9px 13px;
+  min-height: 40px;
+  cursor: pointer;
+}
+.studio button:hover {
+  background: #3b3b3b;
+}
+.studio button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.studio-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 30px;
+}
+.work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.work-list button {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: transparent;
+  padding: 18px;
+}
+.work-list button.selected {
+  border-color: #a0a0a0;
+  background: #2e2e2e;
+}
+.work-list small {
+  color: #bfbfbf;
+  font-size: 11px;
+}
+.work-list strong {
+  line-height: 1.6;
+  font-size: 15px;
+}
+.work-list span {
+  color: #a9a9a9;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.work-list em {
+  font-style: normal;
+  font-size: 11px;
+  color: #c4c4c4;
+}
+.work-detail {
+  min-width: 0;
+}
+.studio-toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.studio-toolbar span {
+  font-size: 12px;
+  color: #ababab;
+  margin-right: auto;
+}
+.studio label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 13px;
+  color: #c3c3c3;
+}
+.studio input,
+.studio textarea,
+.studio select {
+  width: 100%;
+  min-width: 0;
+  background: #1b1b1b;
+  border: 1px solid #424242;
+  border-radius: 8px;
+  padding: 12px;
+  color: #eaeaea;
+  font: inherit;
+  line-height: 1.7;
+}
+.studio textarea {
+  resize: vertical;
+}
+.studio input:focus,
+.studio textarea:focus,
+.studio select:focus {
+  outline: 2px solid #a0a0a0;
+  outline-offset: 2px;
+}
+.work-title input {
+  font-size: 22px;
+  border: 0;
+  border-bottom: 1px solid #404040;
+  border-radius: 0;
+  background: transparent;
+  padding: 12px 0;
+}
+.studio-tabs {
+  display: flex;
+  gap: 5px;
+  margin: 20px 0 26px;
+  border-bottom: 1px solid #3c3c3c;
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+.studio-tabs button {
+  background: transparent;
+  border-color: transparent;
+  color: #a9a9a9;
+}
+.studio-tabs button.active {
+  background: #383838;
+  color: #e6e6e6;
+}
+.studio-form {
+  display: grid;
+  gap: 18px;
+}
+.studio-form h3 {
+  margin: 20px 0 0;
+  font-weight: 500;
+}
+.studio-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.studio .source-choice {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  line-height: 1.7;
+}
+.source-choice input {
+  width: 20px;
+  flex-shrink: 0;
+}
+.studio-copy section {
+  margin-bottom: 30px;
+  padding: 22px;
+  border: 1px solid #3f3f3f;
+  border-radius: 12px;
+}
+.studio-copy h3 {
+  margin: 0 auto 0 0;
+  font-size: 16px;
+}
+.studio pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 2;
+  color: #d9d9d9;
+}
+.studio-copy small {
+  color: #aaaaaa;
+}
+.studio-error {
+  padding: 14px;
+  background: #392b26;
+  border: 1px solid #765544;
+  border-radius: 8px;
+  color: #edc2a8;
+  font-size: 13px;
+}
+.studio-error button {
+  margin-left: 14px;
+}
+.studio-message {
+  padding: 10px 15px;
+  border-left: 2px solid #b2b2b2;
+}
+.slide-editor {
+  display: grid;
+  grid-template-columns: minmax(160px, 300px) minmax(0, 1fr);
+  gap: 25px;
+  padding: 28px 0;
+  border-bottom: 1px solid #3c3c3c;
+}
+.slide-editor label {
+  margin: 12px 0;
+}
+.slide-preview canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px #0005;
+}
+.metric-card,
+.studio-history {
+  padding: 20px;
+  border: 1px solid #424242;
+  border-radius: 10px;
+}
+.work-empty {
+  text-align: center;
+  padding: 70px 20px;
+}
+.studio-history details {
+  margin: 16px 0;
+}
+.ai-diff {
+  width: 100%;
+}
+.ai-diff pre {
+  white-space: pre-wrap;
+  max-height: 220px;
+  overflow: auto;
+  background: #1a1a1a;
+  padding: 12px;
+}
+.partial-result {
+  flex-wrap: wrap;
+}
+.workspace-nav {
+  flex-shrink: 0;
+}
+.studio :focus-visible {
+  outline: 2px solid #cccccc;
+  outline-offset: 3px;
+}
+@media (max-width: 1000px) {
+  .studio {
+    padding: 25px 20px;
+  }
+  .studio-layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .studio-heading {
+    flex-direction: column;
+  }
+  .slide-editor {
+    grid-template-columns: 1fr;
+  }
+  .slide-preview {
+    max-width: 300px;
+  }
+}
+@media (max-width: 650px) {
+  .studio {
+    padding: 22px 16px;
+  }
+  .studio-layout {
+    grid-template-columns: 1fr;
+  }
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(170px, 1fr));
+    overflow: auto;
+    padding-bottom: 10px;
+  }
+  .work-list button {
+    padding: 14px;
+  }
+  .work-list span {
+    display: none;
+  }
+  .studio-two {
+    grid-template-columns: 1fr;
+  }
+  .studio-heading h1 {
+    font-size: 23px;
+  }
+  .studio button {
+    min-height: 44px;
+  }
+  .studio-copy section {
+    padding: 15px;
+  }
+  .studio-tabs {
+    gap: 0;
+  }
+  .studio-tabs button {
+    padding: 9px 10px;
+  }
+  .topbar .breadcrumb {
+    display: none;
+  }
+  .topbar {
+    padding: 0 12px;
+  }
+  .workspace-nav button {
+    padding: 9px;
+    font-size: 12px;
+  }
+  .topbar-actions .save-status {
+    display: none;
+  }
+  .studio-toolbar span {
+    width: 100%;
+  }
+  .slide-preview {
+    max-width: 100%;
+  }
+}
+fieldset.work-detail {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.topbar .save-status[hidden] {
+  display: none;
+}
+.work-list button {
+  align-items: flex-start;
+}
+.studio {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  .studio {
+    scroll-behavior: auto;
+  }
+}
+
+/* The workbench follows the interface theme; canvas artwork is unchanged. */
+:root[data-theme="light"] .studio-heading small,
+:root[data-theme="light"] .work-list small,
+:root[data-theme="light"] .work-list em,
+:root[data-theme="light"] .studio-toolbar span,
+:root[data-theme="light"] .studio-copy small {
+  color: var(--green);
+}
+:root[data-theme="light"] .studio-heading p,
+:root[data-theme="light"] .studio p,
+:root[data-theme="light"] .work-list span {
+  color: var(--muted);
+}
+:root[data-theme="light"] .studio button {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--text);
+}
+:root[data-theme="light"] .studio button:hover {
+  background: var(--raised);
+  border-color: #c2c2c2;
+}
+:root[data-theme="light"] .studio .work-list button {
+  background: var(--panel);
+}
+:root[data-theme="light"] .studio .work-list button:hover {
+  background: var(--raised);
+}
+:root[data-theme="light"] .studio .work-list button.selected,
+:root[data-theme="light"] .studio .work-list button.selected:hover {
+  background: var(--select);
+  border-color: var(--accent);
+}
+:root[data-theme="light"] .studio label {
+  color: var(--text);
+}
+:root[data-theme="light"] .studio input,
+:root[data-theme="light"] .studio textarea,
+:root[data-theme="light"] .studio select {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--text);
+  accent-color: var(--accent);
+}
+:root[data-theme="light"] .studio input:focus,
+:root[data-theme="light"] .studio textarea:focus,
+:root[data-theme="light"] .studio select:focus,
+:root[data-theme="light"] .studio :focus-visible {
+  outline-color: var(--accent);
+}
+:root[data-theme="light"] .studio .work-title input {
+  background: transparent;
+  border-bottom-color: var(--border);
+}
+:root[data-theme="light"] .studio-tabs,
+:root[data-theme="light"] .slide-editor {
+  border-bottom-color: var(--border);
+}
+:root[data-theme="light"] .studio .studio-tabs button {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+}
+:root[data-theme="light"] .studio .studio-tabs button:hover {
+  background: var(--raised);
+  color: var(--text);
+}
+:root[data-theme="light"] .studio .studio-tabs button.active,
+:root[data-theme="light"] .studio .studio-tabs button.active:hover {
+  background: var(--select);
+  color: var(--green);
+}
+:root[data-theme="light"] .studio-copy section,
+:root[data-theme="light"] .metric-card,
+:root[data-theme="light"] .studio-history {
+  background: var(--panel);
+  border-color: var(--border);
+}
+:root[data-theme="light"] .studio pre {
+  color: var(--text);
+}
+:root[data-theme="light"] .studio-error {
+  background: #fff1ed;
+  border-color: #e6c2b8;
+  color: var(--danger);
+}
+:root[data-theme="light"] .studio-error p {
+  color: var(--danger);
+}
+:root[data-theme="light"] .studio-message {
+  background: #f2f2f2;
+  border-left-color: var(--accent);
+  color: var(--green);
+}
+:root[data-theme="light"] .slide-preview canvas {
+  box-shadow: var(--shadow-soft);
+}
+:root[data-theme="light"] .ai-diff pre {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}

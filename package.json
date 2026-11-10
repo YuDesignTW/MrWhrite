@@ -1,0 +1,37 @@
+{
+  "name": "mr-white",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "build": "vite build && node scripts/build-sw.mjs && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "start": "NODE_ENV=production node server/index.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "verify:codex": "node scripts/verify-codex.mjs",
+    "mac:launcher": "npm run build && node scripts/build-mac-launcher.mjs",
+    "format": "prettier --write src server tests/api.test.mjs tests/data.test.mjs tests/http-helper.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "2.1.10",
+    "@types/react": "19.2.18",
+    "@vitejs/plugin-react": "5.0.4",
+    "express": "5.2.1",
+    "idb": "7.1.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "11.0.0",
+    "unified": "11.0.5",
+    "vite": "6.4.2"
+  },
+  "engines": {
+    "node": ">=22.16.0 <23"
+  },
+  "devDependencies": {
+    "prettier": "https://registry.npmjs.org/prettier/-/prettier-3.6.2.tgz"
+  }
+}

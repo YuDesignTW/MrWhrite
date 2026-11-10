@@ -1,0 +1,1143 @@
+/* Visual reference: LP/player/src/styles.css — monochrome, capsule navigation,
+   solid reading surfaces, small regular-weight icons. Content artwork stays untouched. */
+:root[data-theme] {
+  --bg: #17171a;
+  --panel: #252529;
+  --raised: #34343b;
+  --border: #45454d;
+  --text: #eeeeef;
+  --muted: #b9b9c2;
+  --dim: #a8a8b3;
+  --green: #dedee2;
+  --accent: #b2b2ba;
+  --select: #3b3b44;
+  --surface-secondary: #202024;
+  --field: #2e2e34;
+  --button-solid: #eeeeef;
+  --button-ink: #242424;
+  --warning: #d6b98b;
+  --danger: #df9a86;
+  --shadow-soft: inset 1px 1px 1px #ffffff0b, 8px 10px 28px #00000012;
+  font-family:
+    "DM Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Noto Sans TC",
+    "PingFang TC",
+    "Microsoft JhengHei",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--bg);
+  color: var(--text);
+}
+:root[data-theme="light"] {
+  --bg: #e9e9ee;
+  --panel: #ffffff;
+  --raised: #e3e3ea;
+  --border: #cfcfd8;
+  --text: #292929;
+  --muted: #595963;
+  --dim: #60606b;
+  --green: #333337;
+  --accent: #909097;
+  --select: #dddde7;
+  --surface-secondary: #f3f3f7;
+  --field: #f0f0f5;
+  --button-solid: #292929;
+  --button-ink: #f8f8f9;
+  --warning: #876020;
+  --danger: #a1453d;
+  --shadow-soft: inset 1px 1px 1px #ffffff88, 8px 10px 28px #0000000a;
+  background: var(--bg);
+}
+:root[data-theme] body {
+  min-width: 320px;
+  background: var(--bg);
+}
+:root[data-theme] a {
+  color: var(--text);
+  text-underline-offset: 3px;
+}
+:root[data-theme] button {
+  border-radius: 10px;
+  transition:
+    background 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease,
+    transform 120ms ease-out;
+}
+:root[data-theme] button:not(:disabled):active {
+  transform: scale(0.98);
+}
+:root[data-theme] button:hover {
+  background: var(--raised);
+  border-color: var(--border);
+}
+:root[data-theme]
+  :is(button, a, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+:root[data-theme] :is(input, textarea, select) {
+  border-radius: 10px;
+  border-color: var(--border);
+  color: var(--text);
+}
+:root[data-theme] :is(input, textarea)::placeholder {
+  color: var(--dim);
+}
+:root[data-theme] :is(select, option) {
+  background: var(--panel);
+}
+:root[data-theme] input[type="checkbox"] {
+  accent-color: var(--text);
+}
+:root[data-theme] ::selection {
+  background: var(--raised);
+  color: var(--text);
+}
+:root[data-theme] .app {
+  padding: 18px;
+  gap: 14px;
+  background: var(--bg);
+}
+:root[data-theme] .workspace {
+  background: transparent;
+  box-shadow: none;
+  gap: 14px;
+}
+:root[data-theme] .workspace > .topbar {
+  height: 58px;
+  min-height: 58px;
+  padding: 0 22px;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  background: var(--panel);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: var(--shadow-soft);
+  z-index: 12;
+}
+:root[data-theme] .workspace-nav {
+  gap: 4px;
+  margin-right: auto;
+}
+:root[data-theme] .workspace-nav button {
+  font-size: 12px;
+  border-radius: 24px;
+  padding: 8px 13px;
+}
+:root[data-theme] .workspace-nav button.active {
+  background: var(--select);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+:root[data-theme] .intelligence-mode .breadcrumb {
+  display: none;
+}
+:root[data-theme] .breadcrumb,
+:root[data-theme] .crumb-title {
+  color: var(--muted);
+}
+:root[data-theme] .topbar-actions {
+  gap: 12px;
+}
+:root[data-theme] .theme-toggle {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  padding: 6px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--field);
+  box-shadow:
+    inset 1px 1px 1px #ffffff16,
+    2px 4px 7px #0000000a;
+}
+:root[data-theme] .theme-label {
+  display: none;
+}
+:root[data-theme] .theme-toggle svg {
+  width: 15px;
+  height: 15px;
+}
+:root[data-theme] .avatar {
+  width: 29px;
+  height: 29px;
+  background: var(--raised);
+  color: var(--text);
+  border-color: var(--border);
+  outline: none;
+  box-shadow: none;
+}
+:root[data-theme] .status-dot {
+  background: var(--text);
+  box-shadow: none;
+}
+:root[data-theme] .save-status {
+  color: var(--muted);
+}
+:root[data-theme] :is(.primary, .send-button, .agent-send, .studio .primary) {
+  background: var(--button-solid);
+  color: var(--button-ink);
+  border-color: transparent;
+  box-shadow: none;
+}
+:root[data-theme]
+  :is(.primary, .send-button, .agent-send):not(:disabled):hover {
+  background: var(--button-solid);
+  color: var(--button-ink);
+  filter: brightness(0.92);
+}
+:root[data-theme] :is(.send-button, .agent-send):disabled {
+  background: var(--raised);
+  color: var(--dim);
+  border-color: transparent;
+}
+:root[data-theme] :is(.popover, .dialog, .sidebar) {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+:root[data-theme] .popover {
+  border-radius: 16px;
+}
+:root[data-theme] .dialog {
+  border-radius: 24px;
+  box-shadow: 0 24px 80px #00000030;
+}
+:root[data-theme] .dialog::backdrop {
+  background: #15151866;
+  backdrop-filter: blur(4px);
+}
+:root[data-theme] .dialog-header {
+  background: transparent;
+  border-color: var(--border);
+  padding: 20px 24px;
+}
+:root[data-theme] .dialog-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+:root[data-theme] .dialog-content {
+  padding: 20px 24px 24px;
+}
+:root[data-theme]
+  :is(.settings-card, .sample, .revision, .inline-note, .data-path) {
+  background: var(--field);
+  color: var(--text);
+  border-color: var(--border);
+  border-radius: 14px;
+}
+:root[data-theme] :is(.field-label input, .rules-editor) {
+  background: var(--panel);
+  border-color: var(--border);
+}
+:root[data-theme] :is(.settings-tabs button.active, .segmented .active) {
+  background: var(--select);
+  color: var(--text);
+  border-color: var(--border);
+  box-shadow: none;
+}
+:root[data-theme]
+  :is(
+    .section-heading,
+    .text-button,
+    .switch,
+    .checkbox-row,
+    .settings-card dd,
+    .voice-rules,
+    .sample pre,
+    .revision pre
+  ) {
+  color: var(--text);
+}
+:root[data-theme] :is(.status-badge, .status-badge.ready) {
+  color: var(--muted);
+  background: var(--select);
+  border-color: var(--border);
+}
+/* Writing workspace */
+:root[data-theme] .sidebar {
+  width: 236px;
+  border-radius: 24px;
+}
+:root[data-theme] .brand-row {
+  padding: 22px 18px 18px;
+}
+:root[data-theme] .brand {
+  gap: 8px;
+}
+:root[data-theme] .brand > span {
+  font:
+    600 17px/1.4 "DM Sans",
+    sans-serif;
+  letter-spacing: -0.5px;
+}
+:root[data-theme] .brand > svg {
+  width: 20px;
+  height: 20px;
+  color: var(--text);
+}
+:root[data-theme]
+  :is(.search-box, .article-card, .segmented, .list-empty button) {
+  background: transparent;
+  border-color: var(--border);
+}
+:root[data-theme] .article-card.active {
+  background: var(--select);
+  border-color: var(--border);
+  box-shadow: none;
+}
+:root[data-theme] .document-scroll {
+  padding: 14px 20px 22px;
+}
+:root[data-theme] .document {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow-soft);
+}
+:root[data-theme] :is(.body-editor, .markdown) {
+  color: var(--text);
+}
+:root[data-theme] .markdown pre {
+  background: var(--field);
+  border-color: var(--border);
+}
+:root[data-theme] .markdown code {
+  color: var(--text);
+}
+:root[data-theme] .markdown blockquote {
+  border-color: var(--accent);
+  color: var(--muted);
+}
+:root[data-theme] :is(.composer, .selection-toolbar) {
+  background: var(--panel);
+  border-color: var(--border);
+  box-shadow: var(--shadow-soft);
+  border-radius: 18px;
+}
+:root[data-theme] .composer:focus-within {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+:root[data-theme] .composer select {
+  background: var(--field);
+  color: var(--text);
+  border-color: var(--border);
+}
+/* Creative workspace: compact navigation and solid, clearly separated working surfaces. */
+:root[data-theme] .agent-studio {
+  grid-template-columns: 120px minmax(0, 1fr) 280px;
+  gap: 14px;
+  background: transparent;
+  overflow: hidden;
+}
+:root[data-theme] .agent-roster {
+  padding: 12px 0;
+  background: transparent;
+  border: 0;
+}
+:root[data-theme] .agent-roster-heading {
+  padding: 0 9px 10px;
+}
+:root[data-theme] .agent-roster-heading h2 {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+:root[data-theme] .agent-roster-item {
+  gap: 10px;
+  padding: 7px 9px;
+  min-height: 34px;
+  margin-bottom: 4px;
+  border-radius: 12px;
+  border-color: transparent;
+}
+:root[data-theme] .agent-roster-item strong {
+  font-size: 11px;
+  font-weight: 500;
+}
+:root[data-theme] .agent-roster-item.is-active {
+  background: var(--select);
+  border-color: var(--border);
+}
+:root[data-theme] .agent-roster-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+}
+:root[data-theme] .agent-roster-icon svg {
+  width: 16px;
+  height: 16px;
+}
+:root[data-theme] .agent-roster-item.is-active .agent-roster-icon {
+  color: var(--text);
+}
+:root[data-theme] :is(.agent-conversation, .agent-sidebar) {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  overflow: hidden;
+}
+:root[data-theme] .agent-header {
+  padding: 16px 22px;
+  min-height: 66px;
+}
+:root[data-theme] .agent-header h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+:root[data-theme] .agent-avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
+}
+:root[data-theme] .agent-message-avatar {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  color: var(--muted);
+}
+:root[data-theme] .agent-thread {
+  padding: 22px 26px;
+  max-width: 850px;
+}
+:root[data-theme] .agent-welcome {
+  padding: 24px 0 26px;
+}
+:root[data-theme] .agent-welcome h1 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+}
+:root[data-theme] .agent-welcome p {
+  font-size: 12px;
+  line-height: 1.9;
+  max-width: 420px;
+}
+:root[data-theme] .agent-eyebrow {
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  font-size: 9px;
+}
+:root[data-theme] .agent-source-report {
+  background: var(--field);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+:root[data-theme] .agent-source-report strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+:root[data-theme] .agent-source-report p {
+  font-size: 11px;
+}
+:root[data-theme] .agent-source-symbol {
+  background: transparent;
+  color: var(--muted);
+}
+:root[data-theme] .agent-compose-area {
+  padding: 12px 22px 10px;
+}
+:root[data-theme] .agent-composer {
+  background: var(--panel);
+  border-color: var(--border);
+  border-radius: 18px;
+  box-shadow: inset 1px 1px 1px #ffffff0a;
+}
+:root[data-theme] .agent-composer:focus-within {
+  border-color: var(--accent);
+  box-shadow: none;
+}
+:root[data-theme] .agent-composer textarea {
+  font-size: 13px;
+  background: transparent;
+  border: 0;
+}
+:root[data-theme] .agent-capabilities {
+  padding-bottom: 9px;
+  gap: 4px;
+}
+:root[data-theme] .agent-capabilities button {
+  padding: 5px 8px;
+  border-radius: 20px;
+  border-color: transparent;
+  font-size: 12px;
+  background: var(--field);
+}
+:root[data-theme] .agent-capabilities button[aria-pressed="true"] {
+  border-color: var(--border);
+  background: var(--select);
+}
+:root[data-theme] .agent-quick-actions button {
+  border-radius: 20px;
+  font-size: 10px;
+  border-color: var(--border);
+}
+:root[data-theme] .agent-compose-footnote {
+  color: var(--dim);
+  font-size: 10px;
+}
+:root[data-theme] .agent-sidebar-tabs {
+  min-height: 66px;
+  padding: 12px 10px;
+  gap: 3px;
+  align-items: center;
+}
+:root[data-theme] .agent-sidebar-tabs button {
+  border: 0;
+  border-radius: 18px;
+  font-size: 11px;
+  padding: 8px 9px;
+  white-space: nowrap;
+}
+:root[data-theme] .agent-sidebar-tabs button[aria-selected="true"] {
+  background: var(--select);
+  color: var(--text);
+}
+:root[data-theme] .agent-sidebar-body {
+  padding: 20px 16px;
+}
+:root[data-theme] .agent-panel-intro {
+  margin-bottom: 18px;
+}
+:root[data-theme] .agent-panel-intro .agent-eyebrow,
+:root[data-theme] .agent-panel-intro p,
+:root[data-theme] .agent-panel-bottom {
+  display: none;
+}
+:root[data-theme] .agent-panel-intro h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+:root[data-theme]
+  :is(
+    .agent-draft-card,
+    .agent-approved-card,
+    .agent-publication,
+    .agent-performance,
+    .agent-review,
+    .agent-dispatch
+  ) {
+  border-radius: 16px;
+  border-color: var(--border);
+  background: var(--field);
+  box-shadow: none;
+}
+:root[data-theme] .agent-draft-card {
+  padding: 16px;
+}
+:root[data-theme] .agent-draft-card h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+:root[data-theme] .agent-draft-card.is-selected {
+  background: var(--select);
+  border-color: var(--accent);
+}
+:root[data-theme] .agent-message.is-user .agent-message-body {
+  border-radius: 16px;
+  background: var(--select);
+}
+/* Intelligence, work detail and settings use the same neutral surfaces. */
+:root[data-theme] .intel,
+:root[data-theme] .workspace > .studio {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  padding: 28px;
+}
+:root[data-theme] .intel h1,
+:root[data-theme] .studio-heading h1 {
+  font-size: 25px;
+  letter-spacing: -0.6px;
+}
+:root[data-theme]
+  :is(.intel-eyebrow, .studio-heading small, .studio p, .work-list small) {
+  color: var(--muted);
+}
+:root[data-theme] :is(.intel-tabs, .studio-tabs) {
+  gap: 6px;
+}
+:root[data-theme] :is(.intel-tabs button, .studio-tabs button) {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 0;
+  margin-bottom: 10px;
+}
+:root[data-theme] :is(.intel-tabs button.active, .studio-tabs button.active) {
+  background: var(--select);
+  color: var(--text);
+  border: 0;
+}
+:root[data-theme]
+  :is(
+    .intel-search,
+    .intel-card,
+    .intel-detail,
+    .source-card,
+    .studio-card,
+    .work-list button,
+    .slide-card
+  ) {
+  background: var(--field);
+  border-color: var(--border);
+  border-radius: 16px;
+}
+:root[data-theme] .studio button {
+  color: var(--text);
+  background: var(--field);
+  border-color: var(--border);
+  min-height: 34px;
+  padding: 7px 11px;
+}
+:root[data-theme] .studio button:hover,
+:root[data-theme] .work-list button.selected {
+  background: var(--select);
+  border-color: var(--accent);
+}
+:root[data-theme] :is(.studio input, .studio textarea, .studio select) {
+  color: var(--text);
+  background: var(--panel);
+  border-color: var(--border);
+}
+:root[data-theme]
+  :is(
+    .agent-roster,
+    .agent-message-scroll,
+    .agent-sidebar-body,
+    .sidebar-list
+  ) {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+.ui-tooltip {
+  position: fixed;
+  z-index: 1000;
+  display: block;
+  padding: 10px 12px;
+  font-size: 12px;
+  line-height: 1.65;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px #00000020;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+/* Reading hierarchy: opaque content, quieter utility rails, distinct controls. */
+:root[data-theme] :is(.sidebar, .agent-sidebar) {
+  background: var(--surface-secondary);
+}
+:root[data-theme] :is(.agent-header, .agent-sidebar-tabs, .dialog-header) {
+  background: var(--surface-secondary);
+  border-bottom: 1px solid var(--border);
+}
+:root[data-theme] .agent-compose-area {
+  background: var(--surface-secondary);
+  border-top: 1px solid var(--border);
+}
+:root[data-theme] .agent-composer {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 6px #00000008;
+}
+:root[data-theme] .agent-message-body {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.85;
+}
+:root[data-theme] :is(.agent-welcome p, .agent-composer textarea) {
+  font-size: 14px;
+}
+:root[data-theme] .agent-roster-item.is-active {
+  box-shadow: inset 3px 0 var(--text);
+}
+:root[data-theme] .agent-roster-item.is-active strong {
+  font-weight: 600;
+}
+:root[data-theme] .agent-sidebar-tabs button[aria-selected="true"] {
+  box-shadow: inset 0 0 0 1px var(--border);
+  font-weight: 600;
+}
+:root[data-theme] .agent-message.is-user .agent-message-body {
+  border: 1px solid var(--border);
+}
+:root[data-theme]
+  :is(.agent-draft-card, .agent-approved-card, .intel-card, .studio-card) {
+  background: var(--panel);
+}
+
+/* Conversation density: compact navigation, directional message bubbles. */
+:root[data-theme] .agent-conversation {
+  border-radius: 18px;
+}
+:root[data-theme] .agent-header {
+  min-height: 54px;
+  padding: 10px 18px;
+}
+:root[data-theme] .agent-message-scroll {
+  background: var(--surface-secondary);
+}
+:root[data-theme] .agent-thread {
+  width: 100%;
+  max-width: 960px;
+  padding: 16px 20px;
+}
+:root[data-theme] .agent-message {
+  margin: 16px 0;
+  gap: 8px;
+  align-items: flex-start;
+}
+:root[data-theme] .agent-message > div {
+  flex: 0 1 auto;
+  max-width: calc(100% - 36px);
+}
+:root[data-theme] .agent-message-avatar {
+  margin-top: 23px;
+  background: var(--raised);
+  border-radius: 8px;
+}
+:root[data-theme] .agent-message-body {
+  padding: 11px 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px 14px 14px 14px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+:root[data-theme] .agent-message-meta {
+  margin-bottom: 5px;
+}
+:root[data-theme] .agent-message.is-user {
+  margin-left: 36px;
+  justify-content: flex-end;
+}
+:root[data-theme] .agent-message.is-user > div {
+  max-width: 88%;
+}
+:root[data-theme] .agent-message.is-user .agent-message-body {
+  background: var(--select);
+  border-radius: 14px 3px 14px 14px;
+}
+:root[data-theme] .agent-welcome {
+  max-width: 520px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px 14px 14px 14px;
+}
+:root[data-theme] .agent-welcome h1 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 0 0 6px;
+}
+:root[data-theme] .agent-welcome p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+:root[data-theme] .agent-source-report {
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  background: var(--panel);
+  border-radius: 10px;
+}
+:root[data-theme] .agent-source-report p {
+  display: none;
+}
+:root[data-theme] .agent-compose-area {
+  flex: 0 0 auto;
+  padding: 10px 16px 8px;
+  background: var(--panel);
+}
+:root[data-theme] .agent-composer {
+  background: var(--field);
+  border-radius: 14px;
+}
+:root[data-theme] .agent-composer textarea {
+  font-size: 13px;
+}
+
+@media (min-width: 1600px) {
+  :root[data-theme] .agent-studio {
+    grid-template-columns: 128px minmax(0, 1fr) 300px;
+  }
+}
+@media (min-width: 821px) and (max-width: 1150px) {
+  :root[data-theme] .agent-studio {
+    grid-template-columns: 112px minmax(0, 1fr) 244px;
+    gap: 10px;
+  }
+  :root[data-theme] .agent-header,
+  :root[data-theme] .agent-thread,
+  :root[data-theme] .agent-compose-area {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  :root[data-theme] .agent-sidebar-tabs button {
+    padding: 7px;
+    font-size: 10px;
+  }
+  :root[data-theme] .sidebar {
+    width: 210px;
+  }
+  :root[data-theme] .topbar .breadcrumb > span {
+    display: none;
+  }
+  :root[data-theme] .app:not(.intelligence-mode) .topbar .breadcrumb {
+    display: flex;
+    flex: 0 0 auto;
+  }
+}
+@media (max-width: 820px) {
+  :root[data-theme] .app {
+    padding: 10px;
+    gap: 8px;
+  }
+  :root[data-theme] .workspace {
+    gap: 10px;
+  }
+  :root[data-theme] .workspace > .topbar {
+    min-height: 52px;
+    height: 52px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+  :root[data-theme] .workspace-nav {
+    gap: 0;
+    margin: 0 auto 0 0;
+  }
+  :root[data-theme] .workspace-nav button {
+    padding: 7px 9px;
+    font-size: 11px;
+  }
+  :root[data-theme] .topbar .breadcrumb > span {
+    display: none;
+  }
+  :root[data-theme] .app:not(.intelligence-mode) .topbar .breadcrumb {
+    display: flex;
+    flex: 0 0 auto;
+  }
+  :root[data-theme] .topbar-actions {
+    gap: 8px;
+  }
+  :root[data-theme] .agent-studio {
+    gap: 10px;
+    overflow: auto;
+  }
+  :root[data-theme] .agent-roster {
+    padding: 2px 0 4px;
+  }
+  :root[data-theme] .agent-roster-item {
+    padding: 8px 10px;
+    min-height: 36px;
+    margin: 0;
+    gap: 7px;
+  }
+  :root[data-theme] .agent-roster-icon {
+    width: 16px;
+    height: 16px;
+  }
+  :root[data-theme] .agent-roster-item strong {
+    font-size: 11px;
+  }
+  :root[data-theme] .agent-conversation {
+    min-height: 520px;
+    height: calc(100dvh - 130px);
+    border-radius: 20px;
+  }
+  :root[data-theme] .agent-sidebar {
+    flex: 0 0 auto;
+    border-radius: 20px;
+  }
+  :root[data-theme] .agent-header {
+    padding: 12px 16px;
+    min-height: 58px;
+  }
+  :root[data-theme] .agent-thread {
+    padding: 16px;
+  }
+  :root[data-theme] .agent-compose-area {
+    padding: 10px 12px;
+  }
+  :root[data-theme] .agent-welcome h1 {
+    font-size: 15px;
+  }
+  :root[data-theme] .intel,
+  :root[data-theme] .workspace > .studio {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+  :root[data-theme] .document-scroll {
+    padding: 8px 0 14px;
+  }
+  :root[data-theme] .document {
+    border-radius: 18px;
+  }
+  :root[data-theme] .sidebar {
+    border-radius: 0 24px 24px 0;
+  }
+}
+@media (max-width: 430px) {
+  :root[data-theme] .workspace-nav button {
+    padding: 7px;
+    font-size: 10px;
+  }
+  :root[data-theme] .topbar-actions {
+    gap: 5px;
+  }
+  :root[data-theme] .app:not(.intelligence-mode) .topbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 12px;
+    border-radius: 24px;
+  }
+  :root[data-theme] .save-status {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme] button {
+    transition: none;
+  }
+  :root[data-theme] button:not(:disabled):active {
+    transform: none;
+  }
+}
+
+/* Chat is the default workspace; manuscript management is explicitly opened. */
+:root[data-theme] .agent-studio.chat-only {
+  grid-template-columns: 120px minmax(0, 1fr);
+}
+:root[data-theme] .agent-sidebar[hidden] {
+  display: none;
+}
+:root[data-theme] .agent-conversation {
+  border-radius: 16px;
+}
+:root[data-theme] .agent-thread {
+  max-width: 820px;
+  padding-top: 24px;
+}
+:root[data-theme] .agent-compose-area {
+  padding: 12px max(18px, calc((100% - 780px) / 2)) 10px;
+}
+:root[data-theme] .agent-chat-tools summary,
+:root[data-theme] .agent-reference-tools summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 11px;
+  padding: 6px 0;
+  width: fit-content;
+}
+:root[data-theme] .agent-chat-tools[open] summary,
+:root[data-theme] .agent-reference-tools[open] summary {
+  margin-bottom: 8px;
+}
+:root[data-theme] .agent-reference-tools {
+  margin: 0 0 14px;
+}
+:root[data-theme] .agent-welcome {
+  margin: 12px 0 18px;
+}
+:root[data-theme] .agent-compose-footnote:not(.agent-error-text) {
+  display: none;
+}
+:root[data-theme] .agent-composer textarea {
+  min-height: 64px;
+}
+@media (max-width: 820px) {
+  :root[data-theme] .agent-compose-area {
+    padding: 10px 12px;
+  }
+  :root[data-theme] .agent-thread {
+    padding: 16px;
+  }
+}
+
+/* Minimal IG conversation: message canvas plus a conventional rounded composer. */
+:root[data-theme] .ig-simple .agent-compose-area {
+  padding: 12px 18px 16px;
+}
+:root[data-theme] .ig-simple .agent-composer {
+  max-width: 780px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: var(--panel);
+  border: 1px solid var(--accent);
+  padding: 10px 12px;
+}
+:root[data-theme] .ig-simple .agent-composer textarea {
+  min-height: 46px;
+  padding: 6px 4px;
+  resize: none;
+  line-height: 1.7;
+}
+:root[data-theme] .ig-simple .agent-composer-bottom {
+  padding: 4px 0 0;
+}
+:root[data-theme] .ig-simple .agent-send {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+:root[data-theme] .ig-simple .agent-message-body {
+  box-shadow: none;
+}
+:root[data-theme] .ig-proposal-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+:root[data-theme] .ig-proposal-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+:root[data-theme] .ig-proposal-card summary {
+  cursor: pointer;
+  padding: 14px 16px;
+  list-style: none;
+}
+:root[data-theme] .ig-proposal-card summary::-webkit-details-marker {
+  display: none;
+}
+:root[data-theme] .ig-proposal-card summary > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--muted);
+}
+:root[data-theme] .ig-proposal-card strong {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+:root[data-theme] .ig-proposal-card p {
+  font-size: 13px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+:root[data-theme] .ig-proposal-card summary p {
+  margin: 5px 0 10px;
+  color: var(--muted);
+}
+:root[data-theme] .ig-proposal-content {
+  padding: 0 16px 16px;
+}
+:root[data-theme] .ig-proposal-content section {
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+:root[data-theme] .ig-proposal-content h4 {
+  margin: 4px 0;
+  font-size: 14px;
+}
+:root[data-theme] .ig-proposal-content small {
+  color: var(--muted);
+}
+:root[data-theme] .ig-proposal-content button {
+  background: var(--button-solid);
+  color: var(--button-ink);
+  padding: 8px 12px;
+  border: 0;
+}
+
+:root[data-theme] .ig-review-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+:root[data-theme] .ig-review-header h2 {
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+:root[data-theme] .ig-review-header select {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+}
+:root[data-theme] .ig-review h3 {
+  font-size: 12px;
+  margin: 0 0 12px;
+}
+:root[data-theme] .ig-review canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+:root[data-theme] .ig-page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 12px;
+}
+:root[data-theme] .ig-page-nav button {
+  padding: 5px 12px;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+:root[data-theme] .ig-review-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0 22px;
+}
+:root[data-theme] .ig-review-actions button {
+  padding: 7px 9px;
+  font-size: 11px;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--panel);
+}
+:root[data-theme] .ig-caption {
+  font-size: 13px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+:root[data-theme] .ig-artwork-dialog {
+  width: min(650px, 95vw);
+  max-height: 94dvh;
+  overflow: auto;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+:root[data-theme] .ig-artwork-dialog canvas {
+  width: 100%;
+  height: auto;
+}
+:root[data-theme] .ig-artwork-dialog::backdrop {
+  background: #000b;
+}
