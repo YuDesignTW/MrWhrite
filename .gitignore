@@ -1,0 +1,22 @@
+node_modules/
+dist/
+data/
+output/
+tmp/
+.cache/
+.venv*/
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+*.sqlite*
+*.db
+*.db-*
+*.pem
+*.key
+# Only the empty starter manifest belongs in source control.
+library/*
+!library/manifest.json

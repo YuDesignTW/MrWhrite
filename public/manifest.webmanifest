@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "懷特先生",
+  "short_name": "懷特先生",
+  "description": "讓 AI 參與寫作的個人 Markdown 工作台",
+  "lang": "zh-TW",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d111b",
+  "theme_color": "#11171e",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

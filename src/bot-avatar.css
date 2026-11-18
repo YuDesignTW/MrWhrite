@@ -1,0 +1,32 @@
+.tw .tw-bot-avatar{background:none;overflow:visible}
+.tw .tw-bot-avatar .tw-character{width:30px;height:30px;overflow:visible;transform-origin:50% 75%;transition:transform 240ms cubic-bezier(.22,.8,.25,1);--greet-angle:-5deg;--greet-lift:-1px;--greet-squash:.96;--blink-floor:.08;--blink-delay:130ms}
+.tw .tw-bot-avatar.small .tw-character{width:20px;height:20px}
+.tw .tw-welcome>.tw-bot-avatar .tw-character{width:42px;height:42px}
+.tw-bot-reaction{transform-origin:13px 19px}
+.tw-bot-gaze{transition:transform 110ms cubic-bezier(.23,1,.32,1)}
+.tw-bot-eye{transform-box:fill-box;transform-origin:center}
+.tw-bot-smile{opacity:0;transition:opacity 120ms ease-out}
+.tw[data-theme=light] .tw-character-director .tw-bot-reaction>path{fill:#c6c7c5}
+/* Subtle role-specific greetings; no idle animation loops. */
+.tw .tw-bot-avatar .tw-character-director{--greet-angle:0deg;--greet-lift:1px;--greet-squash:.93}
+.tw .tw-bot-avatar .tw-character-social{--greet-angle:-9deg;--greet-lift:-1.7px;--blink-delay:160ms}
+.tw .tw-bot-avatar .tw-character-analyst{--greet-angle:3deg;--greet-lift:0px;--greet-squash:1;--blink-floor:.55}
+.tw .tw-bot-avatar .tw-character-designer{--greet-angle:8deg;--greet-lift:-1px}
+.tw .tw-bot-avatar .tw-character-writer{--greet-angle:-6deg;--greet-lift:.5px;--blink-delay:180ms}
+.tw .tw-bot-avatar .tw-character-video{--greet-angle:0deg;--greet-lift:-.7px;--greet-squash:.98}
+.tw .tw-bot-avatar .tw-character-research{--greet-angle:5deg;--greet-lift:-.5px;--greet-squash:1.04;--blink-delay:190ms}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .tw :is(.tw-member,.tl-member-heading):hover .tw-character{transform:translate(var(--bot-drift,0px),-1px) rotate(var(--bot-tilt,0deg)) scale(1.055);transition-duration:230ms;transition-delay:25ms}
+  .tw :is(.tw-member,.tl-member-heading):hover .tw-bot-reaction{animation:tw-bot-greet 280ms cubic-bezier(.23,1,.32,1) 1}
+  .tw :is(.tw-member,.tl-member-heading):hover .tw-bot-gaze{transform:translate(var(--look-x,0px),var(--look-y,-.4px))}
+  .tw :is(.tw-member,.tl-member-heading):hover .tw-bot-eye{animation:tw-bot-blink 170ms ease-out var(--blink-delay) 1}
+  .tw :is(.tw-member,.tl-member-heading):hover .tw-bot-eye-right{animation-delay:calc(var(--blink-delay) + 25ms)}
+  .tw :is(.tw-member,.tl-member-heading):hover :is(.tw-character-social,.tw-character-designer) .tw-bot-smile{opacity:.8;transition-delay:110ms}
+  .tw :is(.tw-member,.tl-member-heading):active .tw-character{transform:translateY(1px) scale(1.06,.94);transition-duration:85ms;transition-delay:0ms}
+}
+@keyframes tw-bot-greet{0%{transform:none}38%{transform:translateY(var(--greet-lift)) rotate(var(--greet-angle)) scaleY(var(--greet-squash))}75%{transform:translateY(0) rotate(calc(var(--greet-angle) * -.18))}100%{transform:none}}
+@keyframes tw-bot-blink{0%,100%{transform:scaleY(1)}45%{transform:scaleY(var(--blink-floor))}}
+@media(prefers-reduced-motion:reduce){
+  .tw .tw-character,.tw .tw-bot-reaction,.tw .tw-bot-gaze,.tw .tw-bot-eye{animation:none!important;transition:none!important;transform:none!important}
+  .tw .tw-bot-smile{transition:none!important}
+}

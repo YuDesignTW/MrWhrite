@@ -1,0 +1,144 @@
+{
+  "synthetic": true,
+  "request": "請推薦目前有哪些選題",
+  "search": {
+    "query": "test",
+    "sources": [
+      {
+        "id": "news-1",
+        "url": "https://example.com/research/1",
+        "title": "測試資料 1",
+        "summary": "合成測試資料，不是真實新聞。",
+        "publishedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "news-2",
+        "url": "https://example.com/research/2",
+        "title": "測試資料 2",
+        "summary": "合成測試資料，不是真實新聞。",
+        "publishedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "news-3",
+        "url": "https://example.com/research/3",
+        "title": "測試資料 3",
+        "summary": "合成測試資料，不是真實新聞。",
+        "publishedAt": "2026-01-01T00:00:00Z"
+      }
+    ]
+  },
+  "topics": {
+    "topics": [
+      {
+        "title": "測試主題 1",
+        "angle": "合成測試用的內容方向",
+        "sourceIds": [
+          "news-1"
+        ]
+      },
+      {
+        "title": "測試主題 2",
+        "angle": "合成測試用的內容方向",
+        "sourceIds": [
+          "news-2"
+        ]
+      },
+      {
+        "title": "測試主題 3",
+        "angle": "合成測試用的內容方向",
+        "sourceIds": [
+          "news-3"
+        ]
+      }
+    ]
+  },
+  "outputs": {
+    "research": [
+      "合成研究報告：僅供流程測試。"
+    ],
+    "director": [
+      "合成選題",
+      "測試成果已整理。"
+    ],
+    "writer": [
+      "{\"title\": \"測試輪播\", \"caption\": \"合成測試文案。\", \"slides\": [{\"title\": \"測試頁 1\", \"body\": \"合成內文，不是實際作品。\"}, {\"title\": \"測試頁 2\", \"body\": \"合成內文，不是實際作品。\"}, {\"title\": \"測試頁 3\", \"body\": \"合成內文，不是實際作品。\"}, {\"title\": \"測試頁 4\", \"body\": \"合成內文，不是實際作品。\"}]}"
+    ],
+    "designer": [
+      "{\"style\": \"graphic\", \"layout\": \"bottom\", \"rationale\": \"\\u5408\\u6210\\u8a2d\\u8a08\\u6e2c\\u8a66\", \"palette\": {\"background\": \"#171717\", \"foreground\": \"#eeeeee\", \"accent\": \"#cc6633\"}}"
+    ]
+  },
+  "accounts": [
+    {
+      "url": "https://www.instagram.com/example_studio/",
+      "posts": [
+        {
+          "url": "https://www.instagram.com/p/test1/",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        },
+        {
+          "url": "https://www.instagram.com/p/test2/",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        },
+        {
+          "url": "https://www.instagram.com/p/test3/",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        }
+      ],
+      "status": "partial"
+    },
+    {
+      "url": "https://www.threads.com/@example_studio",
+      "posts": [
+        {
+          "url": "https://www.threads.com/@example_studio/post/test1",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        },
+        {
+          "url": "https://www.threads.com/@example_studio/post/test2",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        },
+        {
+          "url": "https://www.threads.com/@example_studio/post/test3",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        }
+      ],
+      "status": "partial"
+    },
+    {
+      "url": "https://x.com/example_studio",
+      "posts": [
+        {
+          "url": "https://x.com/example_studio/status/1",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        },
+        {
+          "url": "https://x.com/example_studio/status/2",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        },
+        {
+          "url": "https://x.com/example_studio/status/3",
+          "body": "合成測試貼文。",
+          "evidence": "synthetic fixture",
+          "mediaStatus": "not_analyzed"
+        }
+      ],
+      "status": "partial"
+    }
+  ]
+}
